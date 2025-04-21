@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 227);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+
+        }
+
+        .leftsection {
+            justify-content: left;
+            font-size: 3rem;
+            margin: 70px 150px;
+        }
+
+        .rightsection img {
+            width: 40%;
+            margin: 10px 150px;
+            border-radius: 50%;
+            float: right;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+        .text-gray{
+            color:gray;
+        }
+        #element {
+            color: blueviolet;
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin:auto;
+            height:80vh;
+        }
+        .secondsection h1{
+            font-size:1.9rem;
+        }
+        .secondsection .box{
+            background: white;
+            width:80vw;
+            height:2px;
+            margin:56px 0px;
+            display:flex;
+        }
+        .secondsection .vertical{
+            height:93px;
+            width:1px;
+            background-color: white;
+            margin:0 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Nishtha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Experience</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                HI,My Name is <span class="purple">Nishtha</span>
+                </n> and I am a passionate
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="pg.png" alt="">
+            </div>
+        </section>
+        <section class="secondsection">
+            <span class="text-gray">What I Have Done So Far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer'],
+            typeSpeed: 100,
+        });
+    </script>
+</body>
+
+</html>
